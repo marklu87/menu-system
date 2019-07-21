@@ -1,0 +1,32 @@
+$border: 1px solid black;
+
+.row {
+  margin: 0;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+div.box:last-of-type {
+  border-left: none;
+}
+
+.box {
+  border: $border;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  border-top: $border;
+  border-bottom: $border;
+}
