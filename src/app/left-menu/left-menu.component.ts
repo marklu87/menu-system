@@ -26,8 +26,7 @@ export class LeftMenuComponent implements OnInit {
     this.showMouseOverText = true;
   }
 
-  onMouseLeave(index: number): void {
+  onMouseLeave(): void {
     this.showMouseOverText = false;
   }
-
 }

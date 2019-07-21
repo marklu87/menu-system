@@ -1,5 +1,5 @@
 <div class="col-sm-12 box column" *ngFor="let menu of menuData; let i = index" (mouseenter)="onMouseOver(i)"
-  (mouseleave)="onMouseLeave(i)">
+  (mouseleave)="onMouseLeave(i)" tabindex="1">
   <span>
     <fa-icon [icon]="menu.iconName" *ngIf="menu.position === 'left'" class="icon"></fa-icon>
     <span *ngIf="i === mouseEnterIndex && showMouseOverText">{{menu.mouseOverText}}</span>
