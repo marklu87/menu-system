@@ -1,7 +1,7 @@
 export interface MenuSystem {
   position: string;
   icon_id: number;
-  iconName: string;
+  iconName: object;
   mouseOverText: string;
   expansionText: string;
 }

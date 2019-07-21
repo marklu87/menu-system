@@ -1,5 +1,3 @@
-<div class="col-sm-12 box">
-  <fa-icon [icon]="faBox"></fa-icon>
+<div class="col-sm-12 box" *ngFor="let menu of menuData; let i = index">
+  <fa-icon [icon]="menu.iconName" *ngIf="menu.position === 'left'"></fa-icon>
 </div>
-<div class="col-sm-12 box">item2</div>
-<div class="col-sm-12 box">item3</div>
