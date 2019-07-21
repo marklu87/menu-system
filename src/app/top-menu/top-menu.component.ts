@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { faCog } from '@fortawesome/free-solid-svg-icons';
+import { faCog, faBomb, faBreadSlice } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-top-menu',
@@ -7,9 +7,14 @@ import { faCog } from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./top-menu.component.scss']
 })
 export class TopMenuComponent implements OnInit {
-  faCog = faCog;
+  public faCog: any = faCog;
+  public faBomb: any = faBomb;
+  public faBreadSlice: any = faBreadSlice;
+  public projectTitle: string;
 
-  constructor() { }
+  constructor() {
+    this.projectTitle = 'Flower Demo';
+  }
 
   ngOnInit() {
   }
