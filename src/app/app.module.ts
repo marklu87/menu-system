@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { TopMenuComponent } from './top-menu/top-menu.component';
-import { LeftRightMenuComponent } from './left-right-menu/left-right-menu.component'
+import { LeftMenuComponent } from './left-menu/left-menu.component'
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
@@ -11,7 +11,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
   declarations: [
     AppComponent,
     TopMenuComponent,
-    LeftRightMenuComponent
+    LeftMenuComponent
   ],
   imports: [
     BrowserModule,
