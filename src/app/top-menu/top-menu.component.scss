@@ -11,10 +11,6 @@ $border: 1px solid black;
   padding-right: 0;
 }
 
-div.box:last-of-type {
-  border-left: none;
-}
-
 .box {
   border: $border;
   height: 50px;
@@ -23,10 +19,22 @@ div.box:last-of-type {
   justify-content: center;
 }
 
+.box.no-border-right {
+  border-right: none;
+}
+
+.box.box-top {
+  border-bottom: none;
+}
+
+.project-tool {
+  height: 25px;
+  border-left: none;
+}
+
 .title {
   height: 50px;
   display: flex;
   align-items: center;
   border-top: $border;
-  border-bottom: $border;
 }
