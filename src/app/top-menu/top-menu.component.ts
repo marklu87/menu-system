@@ -13,6 +13,7 @@ export class TopMenuComponent implements OnInit {
   public projectTitle: string;
 
   constructor() {
+    // In the future, this could be made more dynamic
     this.projectTitle = 'Flower Demo';
   }
 

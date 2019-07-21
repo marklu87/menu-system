@@ -1,40 +1,34 @@
-$border: 1px solid black;
+@import '../app.component.scss';
 
-.row {
-  margin: 0;
-}
-
-.header-container {
+.title-container {
   display: flex;
-  align-items: center;
   padding-left: 0;
   padding-right: 0;
 }
 
-.box {
-  border: $border;
-  height: 50px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
+// .header-container {
+//   display: flex;
+//   align-items: center;
+//   padding-left: 0;
+//   padding-right: 0;
+// }
 
-.box.no-border-right {
-  border-right: none;
-}
+// .box.no-border-right {
+//   border-right: none;
+// }
 
-.box.box-top {
-  border-bottom: none;
-}
+// .box.box-top {
+//   border-bottom: none;
+// }
 
-.project-tool {
-  height: 25px;
-  border-left: none;
-}
+// .project-tool {
+//   height: 25px;
+//   border-left: none;
+// }
 
-.title {
-  height: 50px;
-  display: flex;
-  align-items: center;
-  border-top: $border;
-}
+// .title {
+//   height: 50px;
+//   display: flex;
+//   align-items: center;
+//   border-top: $border;
+// }

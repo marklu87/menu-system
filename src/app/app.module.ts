@@ -3,13 +3,15 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { TopMenuComponent } from './top-menu/top-menu.component';
+import { LeftRightMenuComponent } from './left-right-menu/left-right-menu.component'
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TopMenuComponent
+    TopMenuComponent,
+    LeftRightMenuComponent
   ],
   imports: [
     BrowserModule,

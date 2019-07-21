@@ -1,0 +1,35 @@
+$border: 1px solid black;
+
+.row {
+  margin: 0;
+}
+
+.column {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.main-container {
+  display: flex;
+}
+
+.column {
+  float: left;
+}
+
+.left, .right {
+  width: 25%;
+}
+
+.middle {
+  width: 50%;
+}
+
+.box {
+  border: $border;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 0;
+} 
