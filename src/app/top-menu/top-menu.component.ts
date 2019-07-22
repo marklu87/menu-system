@@ -14,7 +14,7 @@ export class TopMenuComponent implements OnInit {
 
   constructor() {
     // In the future, this could be made more dynamic
-    this.projectTitle = 'Flower Demo';
+    this.projectTitle = 'This Is My Awesome Demo';
   }
 
   ngOnInit() {
