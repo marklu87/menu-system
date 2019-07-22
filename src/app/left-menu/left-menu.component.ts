@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MenuSystem } from '../models/menuSystem';
 import { menuData } from '../leftMenuData.mock';
+import { MenuService } from '../menuService.service';
 
 @Component({
   selector: 'app-left-menu',
@@ -13,7 +14,7 @@ export class LeftMenuComponent implements OnInit {
   public mouseLeave: boolean;
   public showMouseOverText: boolean;
 
-  constructor() {
+  constructor(private menuService: MenuService) {
     this.menuData = menuData;
   }
 
@@ -27,5 +28,9 @@ export class LeftMenuComponent implements OnInit {
 
   onMouseLeave(): void {
     this.showMouseOverText = false;
+  }
+
+  onMouseClick(index: number): void {
+    this.menuService.udpateMenuDataObl(menuData[index]);
   }
 }

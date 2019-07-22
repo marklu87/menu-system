@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { MenuService } from './menuService.service';
 
 @Component({
   selector: 'app-root',
@@ -7,8 +8,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'menu-system';
+  public menuData: any;
 
-  constructor() {
-
+  constructor(private menuService: MenuService) {
+    this.menuService.menuDataObl().subscribe(res => {
+      if (res) {
+        this.menuData = res;
+      }
+    })
   }
 }
