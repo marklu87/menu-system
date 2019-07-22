@@ -1,5 +1,9 @@
 $border: 1px solid black;
 
+section {
+  padding: 15px;
+}
+
 div:focus {
   border: none;
 }

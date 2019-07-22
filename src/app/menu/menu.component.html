@@ -12,7 +12,9 @@
     </div>
     <div class="col-sm-10 column">
       <app-top-menu></app-top-menu>
-      {{menuDataDisplay | json}}
+      <section>
+        {{menuDataDisplay | json}}
+      </section>
     </div>
     <div class="col-sm-1 column text-center">
       <div class="col-sm-12 box column" *ngFor="let menu of menuDataRight; let i = index"
