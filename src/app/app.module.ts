@@ -6,12 +6,14 @@ import { TopMenuComponent } from './top-menu/top-menu.component';
 import { LeftMenuComponent } from './left-menu/left-menu.component'
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { RightMenuComponent } from './right-menu/right-menu.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TopMenuComponent,
-    LeftMenuComponent
+    LeftMenuComponent,
+    RightMenuComponent
   ],
   imports: [
     BrowserModule,

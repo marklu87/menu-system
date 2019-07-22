@@ -1,6 +1,7 @@
-import { MenuSystem } from '../app/models/menuSystem';
+import { MenuSystem } from './models/menuSystem';
 import {
-  faBox, faBreadSlice, faBrain, faCoffee, faCookie, faDragon, faFire, faFlask, faHatWizard, faIceCream, faMeteor
+  faBox, faBreadSlice, faBrain, faCoffee, faCookie, faDragon, faFire, faFlask, faHatWizard, faIceCream, faMeteor,
+  faFootballBall, faBolt, faBed, faBatteryFull, faBomb, faFrog, faHippo, faPepperHot, faPizzaSlice, faTooth, faTrophy
 } from '@fortawesome/free-solid-svg-icons';
 
 export const menuData: Array<MenuSystem> = [
@@ -10,6 +11,7 @@ export const menuData: Array<MenuSystem> = [
     iconName: faBox,
     mouseOverText: 'Box',
   },
+
   {
     icon_id: 1,
     position: 'left',
@@ -70,5 +72,5 @@ export const menuData: Array<MenuSystem> = [
     position: 'left',
     iconName: faMeteor,
     mouseOverText: 'Meteor',
-  },
+  }
 ]
