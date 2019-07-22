@@ -2,7 +2,7 @@
   <div class="col-sm-12 column main-container">
     <div class="col-sm-1 pull-left column text-center">
       <div class="col-sm-12 box column" *ngFor="let menu of menuDataLeft; let i = index"
-        (mouseenter)="onMouseEnter(i, menu.position)" (mouseleave)="onMouseLeave(i)" (click)="onMouseClick(menu)"
+        (mouseenter)="onMouseEnter(i, menu.position)" (mouseleave)="onMouseLeave()" (click)="onMouseClick(menu)"
         tabindex="1">
         <span>
           <fa-icon [icon]="menu.iconName" class="icon"></fa-icon>
@@ -16,7 +16,7 @@
     </div>
     <div class="col-sm-1 column text-center">
       <div class="col-sm-12 box column" *ngFor="let menu of menuDataRight; let i = index"
-        (mouseenter)="onMouseEnter(i, menu.position)" (mouseleave)="onMouseLeave(i)" (click)="onMouseClick(menu)"
+        (mouseenter)="onMouseEnter(i, menu.position)" (mouseleave)="onMouseLeave()" (click)="onMouseClick(menu)"
         tabindex="1">
         <span>
           <fa-icon [icon]="menu.iconName" class="icon"></fa-icon>
