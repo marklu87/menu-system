@@ -1,14 +1,28 @@
 <div class="row">
   <div class="col-sm-12 column main-container">
     <div class="col-sm-1 pull-left column text-center">
-      <app-left-menu></app-left-menu>
+      <div class="col-sm-12 box column" *ngFor="let menu of menuDataLeft; let i = index"
+        (mouseenter)="onMouseEnter(i, menu.position)" (mouseleave)="onMouseLeave(i)" (click)="onMouseClick(menu)"
+        tabindex="1">
+        <span>
+          <fa-icon [icon]="menu.iconName" class="icon"></fa-icon>
+          <span *ngIf="i === mouseEnterIndex && showMouseOverText && position === 'left'">{{menu.mouseOverText}}</span>
+        </span>
+      </div>
     </div>
     <div class="col-sm-10 column">
       <app-top-menu></app-top-menu>
-      {{menuData | json}}
+      {{menuDataDisplay | json}}
     </div>
     <div class="col-sm-1 column text-center">
-      <app-right-menu></app-right-menu>
+      <div class="col-sm-12 box column" *ngFor="let menu of menuDataRight; let i = index"
+        (mouseenter)="onMouseEnter(i, menu.position)" (mouseleave)="onMouseLeave(i)" (click)="onMouseClick(menu)"
+        tabindex="1">
+        <span>
+          <fa-icon [icon]="menu.iconName" class="icon"></fa-icon>
+          <span *ngIf="i === mouseEnterIndex && showMouseOverText && position === 'right'">{{menu.mouseOverText}}</span>
+        </span>
+      </div>
     </div>
   </div>
 </div>
