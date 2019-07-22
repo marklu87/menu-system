@@ -31,6 +31,6 @@ export class LeftMenuComponent implements OnInit {
   }
 
   onMouseClick(index: number): void {
-    this.menuService.udpateMenuDataObl(menuData[index]);
+    this.menuService.udpateMenuDataObl(this.menuData[index]);
   }
 }
