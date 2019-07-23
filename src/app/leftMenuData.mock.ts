@@ -10,13 +10,11 @@ export const menuDataLeft: Array<MenuSystem> = [
     iconName: faBox,
     mouseOverText: 'Box',
   },
-
   {
     icon_id: 1,
     position: 'left',
     iconName: faBreadSlice,
     mouseOverText: 'Bread',
-
   },
   {
     icon_id: 2,
